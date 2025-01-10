@@ -12,7 +12,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/scholarly-digital-space">
         <Routes>
           <Route path="/" element={<Index />} />
         </Routes>
