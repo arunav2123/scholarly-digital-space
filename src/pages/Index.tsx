@@ -20,7 +20,7 @@ const Index = () => {
                 </Avatar>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-academic-primary">
-                Dr. Arunav Kumar
+                Arunav Kumar
               </h1>
               <p className="text-xl text-academic-secondary mb-4">
                 Postdoctoral Associate
@@ -57,14 +57,14 @@ const Index = () => {
             {/* Research Interests Section - Right Side */}
             <div className="text-left">
               <h2 className="section-title mb-8">Research Interests</h2>
-              <div className="space-y-8">
-                <div className="card">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="card hover:shadow-xl transition-shadow">
                   <h3 className="text-xl font-semibold mb-4">Machine Learning & AI</h3>
                   <p className="text-academic-secondary">
                     Advanced research in deep learning, focusing on neural networks and their applications in complex systems.
                   </p>
                 </div>
-                <div className="card">
+                <div className="card hover:shadow-xl transition-shadow">
                   <h3 className="text-xl font-semibold mb-4">Computer Systems</h3>
                   <p className="text-academic-secondary">
                     Optimization of distributed systems and high-performance computing architectures.
@@ -77,13 +77,35 @@ const Index = () => {
       </section>
 
       {/* Publications Section */}
-      <section id="publications" className="py-16">
+      <section id="publications" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="section-title text-center">Selected Publications</h2>
-          <div className="max-w-4xl mx-auto space-y-6">
-            <div className="card">
+          <h2 className="section-title text-center mb-12">Selected Publications</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="card hover:shadow-xl transition-shadow">
               <h3 className="text-lg font-semibold mb-2">
                 Your Latest Publication Title
+              </h3>
+              <p className="text-academic-secondary mb-2">
+                Authors: Arunav Kumar, et al.
+              </p>
+              <p className="text-sm text-academic-secondary">
+                Conference/Journal Name, Year
+              </p>
+            </div>
+            <div className="card hover:shadow-xl transition-shadow">
+              <h3 className="text-lg font-semibold mb-2">
+                Second Publication Title
+              </h3>
+              <p className="text-academic-secondary mb-2">
+                Authors: Arunav Kumar, et al.
+              </p>
+              <p className="text-sm text-academic-secondary">
+                Conference/Journal Name, Year
+              </p>
+            </div>
+            <div className="card hover:shadow-xl transition-shadow">
+              <h3 className="text-lg font-semibold mb-2">
+                Third Publication Title
               </h3>
               <p className="text-academic-secondary mb-2">
                 Authors: Arunav Kumar, et al.
