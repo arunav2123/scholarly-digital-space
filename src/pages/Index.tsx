@@ -26,7 +26,7 @@ const Index = () => {
                 Postdoctoral Associate
               </p>
               <p className="text-lg text-academic-secondary mb-8">
-                Massachusetts Institute of Technology (MIT)  </p>
+                Massachusetts Institute of Technology (MIT) 
                 Plasma Science and Fusion Center
               </p>
               <div className="flex space-x-4 mb-8">
