@@ -7,69 +7,70 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Navigation />
       
-      {/* Hero Section */}
-      <section id="home" className="pt-24 pb-16 animate-fade-in">
+      {/* Main Content Section */}
+      <section className="pt-24 pb-16 animate-fade-in">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="flex justify-center mb-8">
-              <Avatar className="h-48 w-48">
-                <AvatarImage src="/placeholder.svg" alt="Arunav Kumar" />
-                <AvatarFallback>AK</AvatarFallback>
-              </Avatar>
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Profile Section - Left Side */}
+            <div className="text-left">
+              <div className="mb-8">
+                <Avatar className="h-48 w-48">
+                  <AvatarImage src="/placeholder.svg" alt="Arunav Kumar" />
+                  <AvatarFallback>AK</AvatarFallback>
+                </Avatar>
+              </div>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-academic-primary">
+                Dr. Arunav Kumar
+              </h1>
+              <p className="text-xl text-academic-secondary mb-4">
+                Postdoctoral Associate
+              </p>
+              <p className="text-lg text-academic-secondary mb-8">
+                Massachusetts Institute of Technology (MIT)
+              </p>
+              <div className="flex space-x-4 mb-8">
+                <a
+                  href="https://github.com/arunav2123"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-academic-secondary hover:text-academic-primary transition-colors"
+                >
+                  <Github size={24} />
+                </a>
+                <a
+                  href="mailto:your.email@mit.edu"
+                  className="text-academic-secondary hover:text-academic-primary transition-colors"
+                >
+                  <Mail size={24} />
+                </a>
+                <a
+                  href="https://linkedin.com/in/yourusername"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-academic-secondary hover:text-academic-primary transition-colors"
+                >
+                  <Linkedin size={24} />
+                </a>
+              </div>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-academic-primary">
-              Dr. Arunav Kumar
-            </h1>
-            <p className="text-xl text-academic-secondary mb-4">
-              Postdoctoral Associate
-            </p>
-            <p className="text-lg text-academic-secondary mb-8">
-              Massachusetts Institute of Technology (MIT)
-            </p>
-            <div className="flex justify-center space-x-4">
-              <a
-                href="https://github.com/arunav2123"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-academic-secondary hover:text-academic-primary transition-colors"
-              >
-                <Github size={24} />
-              </a>
-              <a
-                href="mailto:your.email@mit.edu"
-                className="text-academic-secondary hover:text-academic-primary transition-colors"
-              >
-                <Mail size={24} />
-              </a>
-              <a
-                href="https://linkedin.com/in/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-academic-secondary hover:text-academic-primary transition-colors"
-              >
-                <Linkedin size={24} />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Research Section */}
-      <section id="research" className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="section-title text-center">Research Interests</h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="card">
-              <h3 className="text-xl font-semibold mb-4">Machine Learning & AI</h3>
-              <p className="text-academic-secondary">
-                Advanced research in deep learning, focusing on neural networks and their applications in complex systems.
-              </p>
-            </div>
-            <div className="card">
-              <h3 className="text-xl font-semibold mb-4">Computer Systems</h3>
-              <p className="text-academic-secondary">
-                Optimization of distributed systems and high-performance computing architectures.
-              </p>
+            {/* Research Interests Section - Right Side */}
+            <div className="text-left">
+              <h2 className="section-title mb-8">Research Interests</h2>
+              <div className="space-y-8">
+                <div className="card">
+                  <h3 className="text-xl font-semibold mb-4">Machine Learning & AI</h3>
+                  <p className="text-academic-secondary">
+                    Advanced research in deep learning, focusing on neural networks and their applications in complex systems.
+                  </p>
+                </div>
+                <div className="card">
+                  <h3 className="text-xl font-semibold mb-4">Computer Systems</h3>
+                  <p className="text-academic-secondary">
+                    Optimization of distributed systems and high-performance computing architectures.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
