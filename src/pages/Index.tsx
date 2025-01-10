@@ -1,12 +1,115 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navigation from '../components/Navigation';
+import { Github, Mail, Linkedin } from 'lucide-react';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-white">
+      <Navigation />
+      
+      {/* Hero Section */}
+      <section id="home" className="pt-24 pb-16 animate-fade-in">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-academic-primary">
+              Arunav Sharma
+            </h1>
+            <p className="text-xl text-academic-secondary mb-8">
+              Computer Science Researcher & Developer
+            </p>
+            <div className="flex justify-center space-x-4">
+              <a
+                href="https://github.com/arunav2123"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-academic-secondary hover:text-academic-primary transition-colors"
+              >
+                <Github size={24} />
+              </a>
+              <a
+                href="mailto:your.email@example.com"
+                className="text-academic-secondary hover:text-academic-primary transition-colors"
+              >
+                <Mail size={24} />
+              </a>
+              <a
+                href="https://linkedin.com/in/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-academic-secondary hover:text-academic-primary transition-colors"
+              >
+                <Linkedin size={24} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Research Section */}
+      <section id="research" className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="section-title text-center">Research Interests</h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="card">
+              <h3 className="text-xl font-semibold mb-4">Machine Learning</h3>
+              <p className="text-academic-secondary">
+                Focus on deep learning applications in computer vision and natural language processing.
+              </p>
+            </div>
+            <div className="card">
+              <h3 className="text-xl font-semibold mb-4">Software Engineering</h3>
+              <p className="text-academic-secondary">
+                Research on software architecture and development methodologies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Publications Section */}
+      <section id="publications" className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="section-title text-center">Selected Publications</h2>
+          <div className="max-w-4xl mx-auto space-y-6">
+            <div className="card">
+              <h3 className="text-lg font-semibold mb-2">
+                Title of Your Publication
+              </h3>
+              <p className="text-academic-secondary mb-2">
+                Authors: Arunav Sharma, et al.
+              </p>
+              <p className="text-sm text-academic-secondary">
+                Conference/Journal Name, 2023
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="section-title text-center">Contact</h2>
+          <div className="max-w-xl mx-auto text-center">
+            <p className="text-academic-secondary mb-6">
+              Feel free to reach out for collaborations or inquiries.
+            </p>
+            <div className="space-y-4">
+              <p>
+                <strong>Email:</strong>{" "}
+                <a
+                  href="mailto:your.email@example.com"
+                  className="text-academic-primary hover:underline"
+                >
+                  your.email@example.com
+                </a>
+              </p>
+              <p>
+                <strong>Location:</strong> Your University, Department
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
