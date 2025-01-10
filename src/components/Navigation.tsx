@@ -1,7 +1,11 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
-  const location = useLocation();
+  const scrollToPublications = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const element = document.getElementById('publications');
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <nav className="bg-white shadow-sm fixed w-full z-10">
@@ -10,20 +14,17 @@ const Navigation = () => {
           <div className="flex space-x-8">
             <Link
               to="/"
-              className={`nav-link inline-flex items-center ${
-                location.pathname === '/' ? 'active' : ''
-              }`}
+              className="nav-link inline-flex items-center"
             >
               Home
             </Link>
-            <Link
-              to="/publications"
-              className={`nav-link inline-flex items-center ${
-                location.pathname === '/publications' ? 'active' : ''
-              }`}
+            <a
+              href="#publications"
+              onClick={scrollToPublications}
+              className="nav-link inline-flex items-center cursor-pointer"
             >
               Publications
-            </Link>
+            </a>
           </div>
         </div>
       </div>
