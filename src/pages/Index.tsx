@@ -80,40 +80,65 @@ const Index = () => {
       {/* Publications Section */}
       <section id="publications" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="section-title text-center mb-12">Selected Publications</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="card hover:shadow-xl transition-shadow">
-              <h3 className="text-lg font-semibold mb-2">
-                Your Latest Publication Title
-              </h3>
-              <p className="text-academic-secondary mb-2">
-                Authors: Arunav Kumar, et al.
+          <h2 className="section-title text-center mb-8">Journal Publications</h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="mb-6">
+              <p className="text-academic-secondary mb-4">
+                Updated list of publications are also available on Google Scholar:{' '}
+                <a 
+                  href="https://scholar.google.com.au/citations?hl=en&user=pqxB8RcAAAAJ"
+                  className="text-academic-primary hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Google Scholar Profile
+                </a>
               </p>
-              <p className="text-sm text-academic-secondary">
-                Conference/Journal Name, Year
+              <p className="text-academic-secondary mb-8">
+                ORCID ID:{' '}
+                <a 
+                  href="https://orcid.org/0000-0001-8678-4552"
+                  className="text-academic-primary hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://orcid.org/0000-0001-8678-4552
+                </a>
               </p>
             </div>
-            <div className="card hover:shadow-xl transition-shadow">
-              <h3 className="text-lg font-semibold mb-2">
-                Second Publication Title
-              </h3>
-              <p className="text-academic-secondary mb-2">
-                Authors: Arunav Kumar, et al.
-              </p>
-              <p className="text-sm text-academic-secondary">
-                Conference/Journal Name, Year
-              </p>
+
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold mb-4">First Author:</h3>
+              <ol className="list-decimal list-outside ml-6 space-y-4">
+                <li className="text-academic-secondary">
+                  <span className="font-semibold">A. Kumar</span>, C.Nuhnerberg, D.Spong, R.L.Dewar, M.J Hole, Z. Qu, J. Loizu, S.R Hudson,
+                  <em className="block mt-1">Computation of relaxed MHD spectrum using SPEC code in non-axisymmetric geometries</em>
+                  (paper in preparation, 2022)
+                </li>
+                <li className="text-academic-secondary">
+                  <span className="font-semibold">A. Kumar</span>, J. Loizu, M.J Hole, Z.Qu, S. R Hudson and R.L.Dewar,
+                  <em className="block mt-1">On the relationship between the multi-region relaxed variational principle and resistive inner layer theory</em>,
+                  2023 Plasma Phys. Control. Fusion 65 075004
+                  <div className="text-sm mt-1">DOI: <a href="https://doi.org/10.1088/1361-6587/acc96e" className="text-academic-primary hover:underline">https://doi.org/10.1088/1361-6587/acc96e</a></div>
+                </li>
+                {/* Add more first author publications similarly */}
+              </ol>
             </div>
-            <div className="card hover:shadow-xl transition-shadow">
-              <h3 className="text-lg font-semibold mb-2">
-                Third Publication Title
-              </h3>
-              <p className="text-academic-secondary mb-2">
-                Authors: Arunav Kumar, et al.
-              </p>
-              <p className="text-sm text-academic-secondary">
-                Conference/Journal Name, Year
-              </p>
+
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold mb-4">Co-author:</h3>
+              <ol className="list-decimal list-outside ml-6 space-y-4">
+                <li className="text-academic-secondary">
+                  S Benjamin, C Clauser, C Rea, R Sweeney, <span className="font-semibold">A. Kumar</span>, F. Marmar
+                  <em className="block mt-1">Macroscopic trends of linear tearing stability in cylindrical current profiles</em>
+                </li>
+                <li className="text-academic-secondary">
+                  K. Aleynikova, S. R. Hudson, P. Helander, <span className="font-semibold">A. Kumar</span>, J.Geiger, J. Loizu, C. Nührenberg, K. Rahbarnia, Z. Qu, Y. Gao, H. Thomsen, Y. Turkin and W7-X team,
+                  <em className="block mt-1">Model for current drive induced crash cycles in W7-X</em>,
+                  Nuclear Fusion 61(2021) 126040, DOI: <a href="https://doi.org/10.1088/1741-4326/ac2ab9" className="text-academic-primary hover:underline">/10.1088/1741-4326/ac2ab9</a>
+                </li>
+                {/* Add more co-author publications similarly */}
+              </ol>
             </div>
           </div>
         </div>
