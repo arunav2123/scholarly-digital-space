@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 
 const Navigation = () => {
-  const scrollToPublications = (e: React.MouseEvent) => {
+  const scrollToSection = (e: React.MouseEvent, sectionId: string) => {
     e.preventDefault();
-    const element = document.getElementById('publications');
+    const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -20,10 +20,31 @@ const Navigation = () => {
             </Link>
             <a
               href="#publications"
-              onClick={scrollToPublications}
+              onClick={(e) => scrollToSection(e, 'publications')}
               className="nav-link inline-flex items-center cursor-pointer"
             >
               Publications
+            </a>
+            <a
+              href="#teaching"
+              onClick={(e) => scrollToSection(e, 'teaching')}
+              className="nav-link inline-flex items-center cursor-pointer"
+            >
+              Teaching
+            </a>
+            <a
+              href="#conferences"
+              onClick={(e) => scrollToSection(e, 'conferences')}
+              className="nav-link inline-flex items-center cursor-pointer"
+            >
+              Conferences
+            </a>
+            <a
+              href="#codes"
+              onClick={(e) => scrollToSection(e, 'codes')}
+              className="nav-link inline-flex items-center cursor-pointer"
+            >
+              Codes
             </a>
           </div>
         </div>
