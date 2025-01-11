@@ -40,13 +40,13 @@ const Index = () => {
                   <Github size={24} />
                 </a>
                 <a
-                  href="mailto:your.email@mit.edu"
+                  href="mailto:arunavk@mit.edu"
                   className="text-academic-secondary hover:text-academic-primary transition-colors"
                 >
                   <Mail size={24} />
                 </a>
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://linkedin.com/in/arunav-kumar-648a78168"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-academic-secondary hover:text-academic-primary transition-colors"
