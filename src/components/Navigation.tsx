@@ -1,12 +1,6 @@
 import { Link } from 'react-router-dom';
 
 const Navigation = () => {
-  const scrollToSection = (e: React.MouseEvent, sectionId: string) => {
-    e.preventDefault();
-    const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <nav className="bg-white shadow-sm fixed w-full z-10">
       <div className="container mx-auto px-4">
@@ -18,34 +12,24 @@ const Navigation = () => {
             >
               Home
             </Link>
-            <a
-              href="#publications"
-              onClick={(e) => scrollToSection(e, 'publications')}
-              className="nav-link inline-flex items-center cursor-pointer"
-            >
-              Publications
-            </a>
-            <a
-              href="#teaching"
-              onClick={(e) => scrollToSection(e, 'teaching')}
-              className="nav-link inline-flex items-center cursor-pointer"
+            <Link
+              to="/teaching"
+              className="nav-link inline-flex items-center"
             >
               Teaching
-            </a>
-            <a
-              href="#conferences"
-              onClick={(e) => scrollToSection(e, 'conferences')}
-              className="nav-link inline-flex items-center cursor-pointer"
+            </Link>
+            <Link
+              to="/conferences"
+              className="nav-link inline-flex items-center"
             >
               Conferences
-            </a>
-            <a
-              href="#codes"
-              onClick={(e) => scrollToSection(e, 'codes')}
-              className="nav-link inline-flex items-center cursor-pointer"
+            </Link>
+            <Link
+              to="/codes"
+              className="nav-link inline-flex items-center"
             >
               Codes
-            </a>
+            </Link>
           </div>
         </div>
       </div>
