@@ -15,7 +15,7 @@ const Index = () => {
             <div className="text-left">
               <div className="mb-8">
                 <Avatar className="h-48 w-48">
-                  <AvatarImage src="/placeholder.svg" alt="Arunav Kumar" />
+                  <AvatarImage src="/lovable-uploads/078359ab-8623-42c6-be9d-47dab476a7ff.png" alt="Arunav Kumar" />
                   <AvatarFallback>AK</AvatarFallback>
                 </Avatar>
               </div>
@@ -145,92 +145,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Teaching Section */}
-      <section id="teaching" className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="section-title text-center mb-8">Teaching Experience</h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 gap-6">
-              <div className="card">
-                <h3 className="text-xl font-semibold mb-2">Teaching Assistant</h3>
-                <p className="text-academic-secondary">
-                  Massachusetts Institute of Technology
-                </p>
-                <ul className="list-disc list-inside mt-4 text-academic-secondary">
-                  <li>Course 1: Advanced Plasma Physics (Spring 2023)</li>
-                  <li>Course 2: Computational Methods in Physics (Fall 2022)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Conferences Section */}
-      <section id="conferences" className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="section-title text-center mb-8">Conference Presentations</h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 gap-6">
-              <div className="card">
-                <h3 className="text-xl font-semibold mb-2">Recent Conferences</h3>
-                <ul className="space-y-4 text-academic-secondary">
-                  <li>
-                    <p className="font-semibold">International Conference on Plasma Physics 2023</p>
-                    <p>Presentation: "Advanced Methods in Plasma Simulation"</p>
-                    <p className="text-sm">Location: Virtual Conference</p>
-                  </li>
-                  <li>
-                    <p className="font-semibold">APS Division of Plasma Physics Meeting 2022</p>
-                    <p>Poster: "Novel Approaches to Fusion Research"</p>
-                    <p className="text-sm">Location: Pittsburgh, PA</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Codes Section */}
-      <section id="codes" className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="section-title text-center mb-8">Research Codes</h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="card">
-                <h3 className="text-xl font-semibold mb-2">SPEC Code</h3>
-                <p className="text-academic-secondary mb-4">
-                  A specialized code for computing MHD equilibria in stellarator geometries.
-                </p>
-                <a 
-                  href="https://github.com/SPEC-code"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-academic-primary hover:underline inline-flex items-center"
-                >
-                  <Github className="mr-2" size={20} />
-                  View Repository
-                </a>
-              </div>
-              <div className="card">
-                <h3 className="text-xl font-semibold mb-2">Plasma Analysis Tools</h3>
-                <p className="text-academic-secondary mb-4">
-                  Collection of Python scripts for plasma physics data analysis.
-                </p>
-                <a 
-                  href="#"
-                  className="text-academic-primary hover:underline inline-flex items-center"
-                >
-                  <Github className="mr-2" size={20} />
-                  View Repository
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Section */}
       <section id="contact" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -243,10 +157,10 @@ const Index = () => {
               <p>
                 <strong>Email:</strong>{" "}
                 <a
-                  href="mailto:your.email@mit.edu"
+                  href="mailto:arunavk@mit.edu"
                   className="text-academic-primary hover:underline"
                 >
-                  your.email@mit.edu
+                  arunavk@mit.edu
                 </a>
               </p>
               <p>
