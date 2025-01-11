@@ -13,8 +13,7 @@ const Teaching = () => {
               <div className="card">
                 <h3 className="text-xl font-semibold mb-2">Mathematical Sciences Institute, ANU</h3>
                 <ul className="list-disc list-inside mt-4 text-academic-secondary">
-                  <li><strong>Co-lecturer</strong> - MATH1014 Spring Course 2022 - Mathematics with Applications II  
-                         <\br>
+                  <li><strong>Co-lecturer</strong> - MATH1014 Spring Course 2022 - Mathematics with Applications II  <br />
                          Topics Include - Sequences and series, multivariable calculus, numerical optimization</li>
                   <li><strong>Academic tutor and workshop demonstrator</strong>:
                     <ul className="list-decimal list-inside ml-4">
