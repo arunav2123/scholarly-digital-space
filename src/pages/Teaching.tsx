@@ -4,35 +4,80 @@ const Teaching = () => {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      
+
       <section className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           <h2 className="section-title text-center mb-8">Teaching Experience</h2>
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 gap-6">
-              <div className="card">
-                <h3 className="text-xl font-semibold mb-2">Mathematical Sciences Institute, ANU</h3>
-                <ul className="list-disc list-inside mt-4 text-academic-secondary">
-                  <li><strong>Co-lecturer</strong> - MATH1014 Spring Course 2022 - Mathematics with Applications II  <br />
-                         Topics Include - Sequences and series, multivariable calculus, numerical optimization</li>
-                  <li><strong>Academic tutor and workshop demonstrator</strong>:
-                    <ul className="list-decimal list-inside ml-4">
-                      <li>MATH2305 - Semester I 2023 - Applied Mathematics I (till 20.04.2023)</li> 
-                      <li>MATH1014 - Semester I 2023 - Applied Mathematics II (till 20.04.2023)</li>
-                      <li>MATH2306 - Semester II 2022 - Applied Mathematics II</li>
-                      <li>MATH1115 - Semester I 2022 - Advanced Mathematics and Applications I</li>
-                      <li>MATH2305 - Semester I 2022 - Applied Mathematics I </li>
-                      <li>Bridging Course Module 3 - Advanced MATH1115, Feb 2022</li>
-                      <li>Advanced PDEs Course (Shandong University, China in collaboration with MSI)</li>
-                      <li>MATH2306 - Semester II 2021 - Applied Mathematics II</li>
-                      <li>MATH3511 - Semester I 2021 - Scientific Computing</li>
-                      <li>Bridging Course Module 3 - Advanced MATH1115, Feb 2021</li>
-                      <li>MATH3514 - Semester II 2020 - Numerical Optimization</li>
-                      <li>MATH2305 - Semester I 2020 - Applied Mathematics I</li>
-                      <li>MATH1013 - Semester II 2019 - Mathematics and Applications I</li>
+              <div className="card p-6 bg-gray-100 shadow-lg rounded-lg">
+                <h3 className="text-xl font-semibold mb-4">Mathematical Sciences Institute, ANU</h3>
+
+                {/* Co-Lecturer Section */}
+                <div className="mb-6">
+                  <h4 className="text-lg font-medium mb-2">Co-Lecturer</h4>
+                  <p><strong>MATH1014 – Spring 2022</strong> – Mathematics with Applications II</p>
+                  <p className="text-sm text-gray-600">
+                    Topics: Sequences and series, multivariable calculus, numerical optimization
+                  </p>
+                </div>
+
+                {/* Academic Tutor & Demonstrator Section */}
+                <div className="mb-6">
+                  <h4 className="text-lg font-medium mb-2">Academic Tutor & Workshop Demonstrator</h4>
+
+                  {/* Applied Mathematics Courses */}
+                  <div className="mb-4">
+                    <h5 className="text-md font-semibold">Applied Mathematics</h5>
+                    <ul className="list-disc list-inside text-academic-secondary ml-4">
+                      <li><strong>MATH2305</strong> – Applied Mathematics I 
+                        <span className="text-gray-500"> (Semester I 2023, Semester I 2022, Semester I 2020)</span>
+                      </li>
+                      <li><strong>MATH2306</strong> – Applied Mathematics II 
+                        <span className="text-gray-500"> (Semester II 2022, Semester II 2021)</span>
+                      </li>
+                      <li><strong>MATH1014</strong> – Applied Mathematics II 
+                        <span className="text-gray-500"> (Semester I 2023)</span>
+                      </li>
                     </ul>
-                  </li>
-                </ul>
+                  </div>
+
+                  {/* Advanced Mathematics & PDEs */}
+                  <div className="mb-4">
+                    <h5 className="text-md font-semibold">Advanced Mathematics & PDEs</h5>
+                    <ul className="list-disc list-inside text-academic-secondary ml-4">
+                      <li><strong>MATH1115</strong> – Advanced Mathematics and Applications I 
+                        <span className="text-gray-500"> (Semester I 2022)</span>
+                      </li>
+                      <li><strong>Advanced PDEs Course</strong> – Shandong University, China 
+                        <span className="text-gray-500"> (in collaboration with MSI)</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Computational & Numerical Methods */}
+                  <div className="mb-4">
+                    <h5 className="text-md font-semibold">Computational & Numerical Methods</h5>
+                    <ul className="list-disc list-inside text-academic-secondary ml-4">
+                      <li><strong>MATH3511</strong> – Scientific Computing <span className="text-gray-500">(Semester I 2021)</span></li>
+                      <li><strong>MATH3514</strong> – Numerical Optimization <span className="text-gray-500">(Semester II 2020)</span></li>
+                    </ul>
+                  </div>
+
+                  {/* Bridging & Workshop Courses */}
+                  <div className="mb-4">
+                    <h5 className="text-md font-semibold">Bridging & Workshop Courses</h5>
+                    <ul className="list-disc list-inside text-academic-secondary ml-4">
+                      <li><strong>Advanced MATH1115</strong> – Bridging Course Module 3 
+                        <span className="text-gray-500"> (Feb 2022, Feb 2021)</span>
+                      </li>
+                      <li><strong>MATH1013</strong> – Mathematics and Applications I 
+                        <span className="text-gray-500"> (Semester II 2019)</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
               </div>
             </div>
           </div>
