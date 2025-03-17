@@ -80,6 +80,70 @@ const Publications = () => {
                 <br />
                 <span className="italic">Plasma Physics and Controlled Fusion 66 (7), 075016</span>
               </li>
+              
+              <li className="mb-4">
+                <strong>On the relationship between the multi-region relaxed variational principle and resistive inner-layer theory</strong>
+                <br />
+                <span className="text-gray-600"><strong className="text-blue-600">A. Kumar</strong>, J Loizu, MJ Hole, ZS Qu, SR Hudson, RL Dewar</span>
+                <br />
+                <span className="italic">Plasma Physics and Controlled Fusion 65 (7), 075004</span>
+              </li>
+
+              <li className="mb-4">
+                <strong>Hydromagnetic instabilities of Multi-Region relaxed MHD for fusion plasma confinement</strong>
+                <br />
+                <span className="text-gray-600"><strong className="text-blue-600">A. Kumar</strong></span>
+                <br />
+                <span className="italic">The Australian National University, Australia</span>
+              </li>
+
+              <li className="mb-4">
+                <strong>Experimental confirmation of efficient island divertor operation and successful neoclassical transport optimization in Wendelstein 7-X</strong>
+                <br />
+                <span className="text-gray-600">TS Pedersen, I Abramovic, P Agostinetti, MA Torres, S Äkäslompolo, <strong className="text-blue-600">A. Kumar</strong>, ...</span>
+                <br />
+                <span className="italic">Nuclear Fusion 62 (4), 042022</span>
+              </li>
+
+              <li className="mb-4">
+                <strong>Nature of ideal MHD instabilities as described by multi-region relaxed MHD</strong>
+                <br />
+                <span className="text-gray-600"><strong className="text-blue-600">A. Kumar</strong>, C Nührenberg, Z Qu, MJ Hole, J Doak, RL Dewar, SR Hudson, ...</span>
+                <br />
+                <span className="italic">Plasma Physics and Controlled Fusion 64 (6), 065001</span>
+              </li>
+
+              <li className="mb-4">
+                <strong>Computation of multi-region, relaxed magnetohydrodynamic equilibria with prescribed toroidal current profile</strong>
+                <br />
+                <span className="text-gray-600">A Baillod, J Loizu, ZS Qu, <strong className="text-blue-600">A. Kumar</strong>, JP Graves</span>
+                <br />
+                <span className="italic">Journal of Plasma Physics 87 (4), 905870403</span>
+              </li>
+
+              <li className="mb-4">
+                <strong>Computation of linear MHD instabilities with the multi-region relaxed MHD energy principle</strong>
+                <br />
+                <span className="text-gray-600"><strong className="text-blue-600">A. Kumar</strong>, Z Qu, MJ Hole, AM Wright, J Loizu, SR Hudson, A Baillod, ...</span>
+                <br />
+                <span className="italic">Plasma Physics and Controlled Fusion 63 (4), 045006</span>
+              </li>
+
+              <li className="mb-4">
+                <strong>Coordinate parameterisation and spectral method optimisation for Beltrami field solver in stellarator geometry</strong>
+                <br />
+                <span className="text-gray-600">ZS Qu, D Pfefferlé, SR Hudson, A Baillod, <strong className="text-blue-600">A. Kumar</strong>, RL Dewar, MJ Hole</span>
+                <br />
+                <span className="italic">Plasma Physics and Controlled Fusion 62 (12), 124004</span>
+              </li>
+
+              <li className="mb-4">
+                <strong>Direct prediction of nonlinear tearing mode saturation using a variational principle</strong>
+                <br />
+                <span className="text-gray-600">J Loizu, YM Huang, SR Hudson, A Baillod, <strong className="text-blue-600">A. Kumar</strong>, ZS Qu</span>
+                <br />
+                <span className="italic">Physics of Plasmas 27 (7)</span>
+              </li>
             </ul>
           </div>
         </div>
