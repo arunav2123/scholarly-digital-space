@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Index from './pages/Index';
 import Teaching from './pages/Teaching';
+import Publications from './pages/Publications';
 import Conferences from './pages/Conferences';
 import Codes from './pages/Codes';
 
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/teaching" element={<Teaching />} />
+        <Route path="/publications" element={<Publications />} />
         <Route path="/conferences" element={<Conferences />} />
         <Route path="/codes" element={<Codes />} />
       </Routes>
