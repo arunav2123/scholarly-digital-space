@@ -19,6 +19,12 @@ const Navigation = () => {
               Teaching
             </Link>
             <Link
+              to="/publications"
+              className="nav-link inline-flex items-center"
+            >
+              Publications
+            </Link>
+            <Link
               to="/conferences"
               className="nav-link inline-flex items-center"
             >
