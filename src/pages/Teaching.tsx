@@ -11,7 +11,7 @@ const Teaching = () => {
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 gap-6">
               <div className="card p-6 bg-gray-100 shadow-lg rounded-lg">
-                <h3 className="text-xl font-semibold mb-4">Mathematical Sciences Institute, ANU</h3>
+                <h3 className="text-xl font-semibold mb-4"> The Australian National University, Canberra, Australia </h3>
 
                 {/* Co-Lecturer Section */}
                 <div className="mb-6">
