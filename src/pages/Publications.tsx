@@ -9,7 +9,7 @@ const Publications = () => {
           <h2 className="section-title text-center mb-8">Publications</h2>
           <div className="max-w-4xl mx-auto">
             <ul className="list-disc list-inside text-academic-secondary">
-              <li className="mb-4">
+              <li >
                 <strong>Experimental confirmation of efficient island divertor operation and successful neoclassical transport optimization in Wendelstein 7-X</strong>
                 <br />
                 <span className="text-gray-600">TS Pedersen, I Abramovic, P Agostinetti, MA Torres, S Äkäslompolo, <strong className="text-blue-600">A. Kumar</strong>, ...</span>
@@ -17,7 +17,7 @@ const Publications = () => {
                 <span className="italic">Nuclear Fusion 62 (4), 042022</span>
               </li>
 
-              <li className="mb-4">
+              <li >
                 <strong>Coordinate parameterisation and spectral method optimisation for Beltrami field solver in stellarator geometry</strong>
                 <br />
                 <span className="text-gray-600">ZS Qu, D Pfefferlé, SR Hudson, A Baillod, <strong className="text-blue-600">A. Kumar</strong>, RL Dewar, MJ Hole</span>
