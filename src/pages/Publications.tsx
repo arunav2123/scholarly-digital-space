@@ -10,19 +10,19 @@ const Publications = () => {
           <div className="max-w-4xl mx-auto">
             <ul className="list-disc list-inside text-academic-secondary">
               <li >
-                <strong>Experimental confirmation of efficient island divertor operation and successful neoclassical transport optimization in Wendelstein 7-X</strong>
+                <strong>Sawtooth crash in tokamak as a sequence of Multi-region Relaxed MHD equilibria</strong>
                 <br />
-                <span className="text-gray-600">TS Pedersen, I Abramovic, P Agostinetti, MA Torres, S Äkäslompolo, <strong className="text-blue-600">A. Kumar</strong>, ...</span>
+                <span className="text-gray-600">Z. Qu, Y. Zhou, <strong className="text-blue-600">A. Kumar</strong>, J. Doak, J. Loizu, M. Hole, </span>
                 <br />
-                <span className="italic">Nuclear Fusion 62 (4), 042022</span>
+                <span className="italic">arXiv preprint arXiv:2501.14242 || 2025 </span>
               </li>
 
               <li >
-                <strong>Coordinate parameterisation and spectral method optimisation for Beltrami field solver in stellarator geometry</strong>
+                <strong>Macroscopic trends of linear tearing stability in cylindrical current profiles</strong>
                 <br />
-                <span className="text-gray-600">ZS Qu, D Pfefferlé, SR Hudson, A Baillod, <strong className="text-blue-600">A. Kumar</strong>, RL Dewar, MJ Hole</span>
+                <span className="text-gray-600">S. Benjamin, C. Clauser, C. Rea, R. Sweeney, <strong className="text-blue-600">A. Kumar</strong>, E. Marmar</span>
                 <br />
-                <span className="italic">Plasma Physics and Controlled Fusion 62 (12), 124004</span>
+                <span className="italic">Plasma Physics and Controlled Fusion 66 (7), 075016 || 2024 </span>
               </li>
 
               <li className="mb-4">
