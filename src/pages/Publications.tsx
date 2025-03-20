@@ -9,7 +9,7 @@ const Publications = () => {
           <h2 className="section-title text-center mb-8">Publications</h2>
           <div className="max-w-4xl mx-auto">
             <ul className="list-disc list-inside text-academic-secondary">
-              <li >
+              <li className="mb-4">
                 <strong>Sawtooth crash in tokamak as a sequence of Multi-region Relaxed MHD equilibria</strong>
                 <br />
                 <span className="text-gray-600">Z. Qu, Y. Zhou, <strong className="text-blue-600">A. Kumar</strong>, J. Doak, J. Loizu, M. Hole, </span>
@@ -17,7 +17,7 @@ const Publications = () => {
                 <span className="italic">arXiv preprint arXiv:2501.14242 || 2025 </span>
               </li>
 
-              <li >
+              <li className="mb-4" >
                 <strong>Macroscopic trends of linear tearing stability in cylindrical current profiles</strong>
                 <br />
                 <span className="text-gray-600">S. Benjamin, C. Clauser, C. Rea, R. Sweeney, <strong className="text-blue-600">A. Kumar</strong>, E. Marmar</span>
