@@ -166,7 +166,7 @@ const Teaching = () => {
                               <p className="text-gray-700 font-medium mb-3">{course.name}</p>
                               <div className="flex items-center">
                                 <Calendar className="w-3 h-3 text-gray-400 mr-2" />
-                                <span className="text-xs text-gray-600">{semester}</span>
+                                <span className="text-xs text-gray-600">{course.semester}</span>
                               </div>
                             </CardContent>
                           </Card>
