@@ -1,129 +1,91 @@
 
 import Navigation from '../components/Navigation';
-import { Mail, MapPin, Users } from 'lucide-react';
-import { Card, CardContent } from '../components/ui/card';
+import { Mail } from 'lucide-react';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="pt-32 pb-20">
+      {/* Header Section */}
+      <section className="pt-24 pb-8 bg-gray-100">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
-              {/* Profile Image */}
-              <div className="lg:col-span-1 flex justify-center lg:justify-start">
-                <img 
-                  src="/lovable-uploads/078359ab-8623-42c6-be9d-47dab476a7ff.png" 
-                  alt="Dr. Arunav Kumar"
-                  className="w-64 h-64 object-cover rounded-lg shadow-sm"
-                />
-              </div>
+          <div className="max-w-5xl mx-auto">
+            <h1 className="text-4xl font-light text-gray-800 mb-2">Arunav Kumar</h1>
+            <p className="text-lg text-gray-600">Magnetohydrodynamics, Plasma Physics, Computational Modeling</p>
+          </div>
+        </div>
+      </section>
 
-              {/* Profile Info */}
-              <div className="lg:col-span-2 space-y-8">
-                <div className="space-y-4">
-                  <h1 className="text-4xl font-bold text-gray-900">
-                    Dr. Arunav Kumar
-                  </h1>
-                  <p className="text-lg text-gray-600 leading-relaxed">
-                    Postdoctoral Research Associate specializing in Magnetohydrodynamics (MHD), 
-                    Plasma Physics, and Computational Modeling with expertise in fusion energy research.
+      {/* Main Content */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+              {/* Main Content */}
+              <div className="lg:col-span-2 space-y-6">
+                <h2 className="text-2xl font-light text-gray-800 mb-4">Hello! I'm Arunav Kumar</h2>
+                
+                <div className="text-gray-700 leading-relaxed space-y-4">
+                  <p>
+                    My current research focuses on developing, utilizing and extending computational tools for 
+                    magnetohydrodynamics and plasma physics applications, particularly in fusion energy research. 
+                    I specialize in <strong>stellarator physics</strong> and <strong>tokamak research</strong>.
+                  </p>
+                  
+                  <p>
+                    Among my research outputs, I have contributed to novel MHD equilibrium concepts and advanced 
+                    computational modeling techniques. My work involves multi-region relaxed MHD equilibria and 
+                    tearing mode stability analysis, crucial for understanding plasma confinement in fusion devices.
+                  </p>
+                  
+                  <p>
+                    I am currently a Postdoctoral Research Associate at the Australian National University, 
+                    where I continue to advance our understanding of plasma physics through computational 
+                    modeling and theoretical analysis. My research contributes to the development of sustainable 
+                    fusion energy solutions.
+                  </p>
+                  
+                  <p>
+                    In addition to my research, I am actively involved in teaching and mentoring, having served 
+                    as co-lecturer and academic tutor for various mathematics and applied mathematics courses 
+                    at ANU. I have also contributed to advanced PDEs courses and workshops.
                   </p>
                 </div>
+              </div>
 
-                {/* Contact Info */}
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3">
-                    <Mail className="w-5 h-5 text-gray-500" />
-                    <span className="text-gray-700">arunav.kumar@anu.edu.au</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <MapPin className="w-5 h-5 text-gray-500" />
-                    <span className="text-gray-700">Canberra, Australia</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Users className="w-5 h-5 text-gray-500" />
-                    <span className="text-gray-700">Australian National University</span>
+              {/* Sidebar */}
+              <div className="lg:col-span-1 space-y-8">
+                {/* Profile Image */}
+                <div className="text-center">
+                  <img 
+                    src="/lovable-uploads/078359ab-8623-42c6-be9d-47dab476a7ff.png" 
+                    alt="Arunav Kumar"
+                    className="w-48 h-48 object-cover mx-auto border border-gray-200"
+                  />
+                </div>
+
+                {/* Contact */}
+                <div>
+                  <h3 className="text-xl font-light text-gray-800 mb-4">Contact me</h3>
+                  <div className="space-y-2">
+                    <div className="flex items-center space-x-2">
+                      <Mail className="w-4 h-4 text-gray-500" />
+                      <a 
+                        href="mailto:arunav.kumar@anu.edu.au" 
+                        className="text-blue-600 hover:underline text-sm"
+                      >
+                        arunav.kumar@anu.edu.au
+                      </a>
+                    </div>
+                    <p className="text-sm text-gray-600">
+                      Mathematical Sciences Institute<br />
+                      Australian National University<br />
+                      Canberra, Australia
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Research Interests */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12">Research Interests</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {[
-                "Magnetohydrodynamics",
-                "Plasma Physics", 
-                "Fusion Energy",
-                "Computational Modeling",
-                "Stellarator Physics",
-                "Tokamak Research"
-              ].map((interest, index) => (
-                <div key={index} className="p-6 bg-white rounded-lg border border-gray-200">
-                  <h3 className="text-lg font-semibold text-gray-900">{interest}</h3>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Recent Publications */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12">Recent Publications</h2>
-            
-            <div className="space-y-8">
-              {[
-                {
-                  title: "Sawtooth crash in tokamak as a sequence of Multi-region Relaxed MHD equilibria",
-                  authors: "Z. Qu, Y. Zhou, A. Kumar, J. Doak, J. Loizu, M. Hole",
-                  journal: "arXiv preprint arXiv:2501.14242",
-                  year: "2025"
-                },
-                {
-                  title: "Macroscopic trends of linear tearing stability in cylindrical current profiles",
-                  authors: "S. Benjamin, C. Clauser, C. Rea, R. Sweeney, A. Kumar, E. Marmar",
-                  journal: "Plasma Physics and Controlled Fusion 66 (7), 075016",
-                  year: "2024"
-                }
-              ].map((pub, index) => (
-                <div key={index} className="p-6 bg-white border border-gray-200 rounded-lg">
-                  <div className="space-y-2">
-                    <h3 className="text-lg font-semibold text-gray-900">
-                      {pub.title}
-                    </h3>
-                    <p className="text-gray-600">{pub.authors}</p>
-                    <p className="text-sm text-gray-500">{pub.journal} ({pub.year})</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Contact</h2>
-            <div className="space-y-4">
-              <p className="text-lg text-gray-700">arunav.kumar@anu.edu.au</p>
-              <p className="text-gray-600">Mathematical Sciences Institute</p>
-              <p className="text-gray-600">Australian National University, Canberra</p>
             </div>
           </div>
         </div>
